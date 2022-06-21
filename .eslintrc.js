@@ -23,8 +23,8 @@ module.exports = {
       },
       typescript: {},
     },
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
+    // 'import/parsers': {
+    //   '@typescript-eslint/parser': ['.ts', '.tsx'],
+    // },
   },
 };

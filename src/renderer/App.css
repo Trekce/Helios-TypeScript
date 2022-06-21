@@ -2,61 +2,164 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
-body {
-  position: relative;
-  color: white;
-  height: 100vh;
-  background: linear-gradient(
-    200.96deg,
-    #fedc2a -29.09%,
-    #dd5789 51.77%,
-    #7a2c9e 129.35%
-  );
-  font-family: sans-serif;
-  overflow-y: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+@font-face {
+  font-family: quicksand;
+  src: url('./assets/fonts/Quicksand-Light.ttf');
 }
 
-button {
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  appearance: none;
-  font-size: 1.3rem;
-  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
-    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
-  transition: all ease-in 0.1s;
-  cursor: pointer;
-  opacity: 0.9;
+* {
+  color: white;
+  font-family: quicksand;
+  font-size: 34px;
 }
 
 button:hover {
-  transform: scale(1.05);
-  opacity: 1;
+  cursor: pointer;
 }
 
-li {
-  list-style: none;
+button {
+  background: transparent;
+  border: 1px solid rgba(170, 170, 170, 0.493);
+  border-radius: 5px;
+  transition: all 100ms ease-in-out;
+  padding: 8px;
 }
 
-a {
-  text-decoration: none;
-  height: fit-content;
-  width: fit-content;
-  margin: 10px;
+.button-ericsson-submit {
+  margin-top: 32px;
 }
 
-a:hover {
-  opacity: 1;
-  text-decoration: none;
+button:hover {
+  background: #ffb3003a;
 }
 
-.Hello {
+input[type='text'] {
+  background: transparent;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+nav {
+  background: #333;
+  box-shadow: 0 0 8px 4px #222;
+  width: 260px;
+  height: calc(100% - 40px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  z-index: 200;
+}
+
+nav button {
+  border: none;
+  background: transparent;
+  text-align: left;
+  margin-top: 8px;
+  width: 260px;
+  height: 60px;
+}
+
+.logo {
+  width: 100%;
+  margin-bottom: 32px;
+  -webkit-user-drag: none;
+}
+
+.back-icon {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  transition: all 200ms;
+}
+
+.back-icon:hover {
+  color: #ffb3003a;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.Content {
+  position: absolute;
+  left: 276px;
+  top: 0;
+  width: calc(100% - 276px);
+  height: calc(100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  background: linear-gradient(
+    200.96deg,
+    #494841 -29.09%,
+    #5a3542 51.77%,
+    #5b4664 129.35%
+  );
+  overflow-y: hidden;
+  margin: 0;
+}
+
+.Content-Full {
+  left: 0;
+  width: 100%;
+}
+
+.Content > div {
+  height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Content > div > div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+.button-main {
+  height: 80px;
+  min-width: 200px;
+}
+
+.button-secondary {
+  margin-bottom: 32px;
+}
+
+.ericssonDetails {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.progress {
+  height: 40px;
+  width: 400px;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  overflow: hidden;
+}
+
+.progress > div {
+  background: #777;
+  height: 100%;
+  width: 0%;
+  transition: width 50ms;
+}
+
+.swal2-html-container div {
+  color: #333 !important;
 }

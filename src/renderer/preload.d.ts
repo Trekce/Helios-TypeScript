@@ -11,6 +11,10 @@ declare global {
         ): (() => void) | undefined;
         once(channel: string, func: (...args: unknown[]) => void): void;
       };
+      ericsson: {
+        getAllInfo(): void;
+        getProductInfo(): void;
+      };
     };
   }
 }
