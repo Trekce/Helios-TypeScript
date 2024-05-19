@@ -1,12 +1,11 @@
 {
-  "name": "electron-react-boilerplate",
-  "version": "4.6.0",
-  "description": "A foundation for scalable desktop apps",
+  "name": "eldenpie",
+  "version": "1.0.0",
+  "description": "A companion application to show an overlay of death counts and provide hotkeys to count them.",
   "license": "MIT",
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://github.com/electron-react-boilerplate"
+    "name": "Michael Eckert",
+    "email": "michael.ryan.eckert@gmail.com"
   },
   "main": "./dist/main/main.js",
   "scripts": {
